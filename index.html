@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: steelblue;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: crimson;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:black;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color:steelblue;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: crimson;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: crimson;
+  padding: 60px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: crimson;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Over mezelf</h1>
+  <p>Jelle Langeveld</p>
+</div>
+
+<div class="topnav">
+  <a href="https://facebook.com/jelle.langeveld">Facebook</a>
+  <a href="https://www.instagram.com/jelle_0046/">Instagram</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Hobby's</h2>
+      <h5></h5>
+      <p><img src="formule1.jpg" style="height:150px;"></p>
+      <p><img src="Easports.jpg" style="height:150px;"></p>
+      <p><img src="minecraft.jpg" style="height:150px;">Minecraft</p>
+      <p></p>
+      <p>Mijn hobby's zijn voetballen en gamen. Ik speel graag games zoals FIFA, Formule 1 en Minecraft.</p>
+    </div>
+    <div class="card">
+      <h2>Favoriete eten</h2>
+      <h5></h5>
+      <div class="fakeimg" style=height:200px;></div>
+      <p></p>
+      <p>Mijn favoriete eten is friet. Ik heb ook andere favoriete eten zoals pizza, lasagne</p> </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Foto</h2>
+      <img src= "Jelle.jpg" style="height:300px;">
+      <p></p>
+    </div>
+    <div class="card">
+      <h3>VV Sittard</h3>
+      <p><a href="https://www.vvsittard.nl/"><img src="vvsittard.jpg" style="height:150px;"></a></p>
+      <p>Ik zit zelf op voetbal. Ik voetbal bij de club VV Sittard. Ik speel bij JO19-2 als rechtsmidden</p>
+    </div>
+    <div class="card">
+      <h3></h3>
+     <p><a href="https://www.facebook.com/jelle.langeveld"><img src="facebook.jpg" style="height:50px;"> </a></p> 
+     <p><a href="https://www.instagram.com/jelle_0046/"><img src="instagram.jpg" style="height:50px;"></a></p> 
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
